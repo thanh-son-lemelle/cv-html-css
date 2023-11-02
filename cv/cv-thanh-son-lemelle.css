@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+  
+body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	background-color: rgb(0, 0, 9);
+	margin: 1%;
+}
+
+/* Style the header */
+.header {
+	background-color: #f1f1f14d;
+	color: #4bffa5;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+}
+  
+/* Create columns that floats */
+.column1 {
+	float: left;
+	width: 17%;
+	padding: 10px;
+	text-align: center;
+	margin: 1%;
+}
+  
+/* Create columns that floats */
+.column {
+	float: left;
+	width: 75%;
+	padding: 10px;
+	margin: 1%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: flex;
+	clear: both;
+}
+  
+/* Style the footer */
+.footer {
+	width: 50px;
+	height: 310px;
+	background-color: #f1f1f13d;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	bottom: 35%;
+	left: 95%;
+}
+  
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media (max-width: 900px) {
+	.column {
+	  width: 100%;
+	}
+}
+
+/* glass effect */
+.glass-effect{
+	background: rgba(70, 79, 81, 0.15);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2.6px);
+	-webkit-backdrop-filter: blur(2.6px);
+}
+
+h2, h3, h4, h5, h6 {
+	color: aquamarine;
+}
+
+
+/*icones*/
+.icon-ghit {
+	background-image: url("https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png");
+    background-size: 32px 32px; /* Taille de l'icône */
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    padding: 10px;
+	margin-bottom: 30%;
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.icon-cv {
+	background-image: url("https://res.cloudinary.com/dcoigvhp0/image/upload/v1649683361/icones-cv/rounded/contact/blanc/icone-cv-date-naissance-blanc.png");
+    background-size: 32px 32px; /* Taille de l'icône */
+    background-repeat: no-repeat;
+	bottom: 1%;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+
+}
